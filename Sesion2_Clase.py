@@ -64,9 +64,8 @@ def main():
     print(mi_lista1)
     mi_lista1.sort()
     print(mi_lista1)
-    """
-    #Matrices -> lista de listas -> lista de filas de matriz
     
+    #Matrices -> lista de listas -> lista de filas de matriz
     matriz = [[2, 2, 1, 4],
               [1, 5, 8, 9],
               [2, 1, 3, 4]]
@@ -80,14 +79,98 @@ def main():
     
     total = 0
     for fila in range(filas):
-        for columna in range(columnas):
-            print('fila: ', fila, '  columna: ', columna, ' -> ', matriz[fila][columna])
+        for columna in range (columnas):
+            print('matriz en ', fila, ', ', columna, ' es: ', matriz[fila][columna])
             total += matriz[fila][columna]
-            for ...
-            
     print('La suma de todos los elementos de la matriz es: ', total)
     
+
+    total = 0
+    for fila in matriz:
+        for valor in fila:
+            print('el valor es: ', valor)
+            total += valor    
+
+    print('La suma de todos los elementos de la matriz es: ', total)
+    """
     
+    # Strings
+    mi_string = "Hola! este es un string"
+    mi_string2 = 'Hola! este es otro string'
+    
+    # len
+    print(len(mi_string))
+    
+    print('----')
+    
+    # find
+    print(mi_string.find('e'))
+    
+    print('----')
+    
+    # lower
+    print(mi_string)
+    mi_string = mi_string.lower()
+    print(mi_string)
+    
+    print('----')
+    
+    #upper
+    print(mi_string)
+    mi_string = mi_string.upper()
+    print(mi_string)
+    
+    print('----')
+    
+    #replace
+    print(mi_string)
+    mi_string = mi_string.replace('ESTE', 'AQUEL')
+    print(mi_string)
+    
+    print('----')
+    
+    # split
+    lista_de_palabras = mi_string.split(' ')
+    print(type(lista_de_palabras))
+    print(lista_de_palabras)
+    
+    print('----')
+    
+    # concatenacion
+    nuevo_string = mi_string + ' ----- ' + mi_string2
+    print(nuevo_string)
+    
+    print('----')
+    
+    # splits
+    print(mi_string)
+    print(mi_string[6:11])
+    
+    print('----')
+    
+    # Iterar sobre strings
+    for i in range(len(mi_string)):
+        print('Caracter en posicion: ', i, " es: ", mi_string[i])
+        
+    for caracter in mi_string:
+        print('El caracter es: ', caracter)
     
 if __name__ == '__main__':
     main()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
